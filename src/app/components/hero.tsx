@@ -3,7 +3,7 @@ import React from "react"
 import Image from "next/image";
 import { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import { FaGoogle, FaLinkedin, FaTwitter } from 'react-icons/fa'; 
+import { FaGoogle, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import Link from "next/link";
 
 
@@ -43,7 +43,7 @@ const Hero = () => {
     const controls = useAnimation();
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const changeSlide = (direction:any) => {
+    const changeSlide = (direction: any) => {
         const nextIndex = (currentIndex + direction + slides.length) % slides.length;
         setCurrentIndex(nextIndex);
         controls.start({
